@@ -16,6 +16,8 @@ With the rise in prescription medication usage, quick and reliable pill identifi
 
 	•	Comprehensive Dataset: Utilizes the all_labels.csv dataset from ePillID, covering various pills with detailed labels.
 	•	Potential for Real-World Application: A tool that could be used in healthcare, pharmacies, or for individual safety purposes.
+	•	Pill Identification: Classifies pills using advanced machine learning techniques.
+	•	
 	
 
 *Getting Started:*
@@ -23,12 +25,11 @@ With the rise in prescription medication usage, quick and reliable pill identifi
 Installation
 
 
-
 *Prerequisites:*
 
-	•	
-	•	
-	•	
+	•	Python 3.8+
+	•	Required libraries: pandas, numpy, torch, and transformers
+	•	Google Drive (for accessing the dataset)
 
 
 *Model Architecture:*
