@@ -6,7 +6,7 @@
 
 *Project Overview*
 
-This project aims to build a machine learning model capable of identifying drugs from user input. Using the publicly available information from www.drugs.com, the model is trained to classify drugs based on the user's description or name of the drug, aiding in quick and accurate identification. The resulting output would be medical information about the drug requested and the possible side-effects.
+This project aims to build a machine learning model capable of identifying drugs from user input. Downloading the CSV file of drug information from https://www.kaggle.com/datasets/ahmedshahriarsakib/assorted-medicine-dataset-of-bangladesh?select=generic.csv, the dataframe is cleaned, split, trained using Gradient Boost Regression to classify drugs based on the user's description or name of the drug, aiding in quick and accurate identification. The resulting output would be medical information about the drug requested and the possible side-effects.
 
 *Motivation*
 
@@ -14,7 +14,7 @@ With the rise in prescription medication usage, quick and reliable drug identifi
 
 *Features:*
 
-	•	Comprehensive Dataset: Access the Drugs.com and scrape the site for data.
+	•	Comprehensive Dataset: CSV file from https://www.kaggle.com/datasets/ahmedshahriarsakib/assorted-medicine-dataset-of-bangladesh?select=generic.csv
 	•	Potential for Real-World Application: A tool that could be used in healthcare, pharmacies, or for individual safety purposes.
 	•	Drug Identification: Classifies drugs using advanced machine learning techniques.
 	•	
@@ -34,15 +34,26 @@ Installation
 
 *Steps:*
 
-	•	Access the Drugs.com and scrape the site for data
-	•	Create a dataframe of the drug description and side effects
-	•	Data Preprocessing (clean & categorize)
-	•	Train using CNN, cross-validate, optimize the model to improve accuracy
-	•	Test user input and provide output using Langchain and Gradio Interface
+	•	Access (https://www.kaggle.com/datasets/ahmedshahriarsakib/assorted-medicine-dataset-of-bangladesh?select=generic.csv) and aquire the CSV file
+	•	Create a dataframe of the drug description and other features
+	•	Data Preprocessing (clean, categorize, and split)
+	•	Train using Gradient Boost Regression, cross-validate, optimize the model by using HyperParameter Tuning (GridSearchCV and RandomizedSearchCV) to improve accuracy
+	•	Test user input and provide output using a Gradio Interface
+
+ *Dataset*
+
+ 	•	Dataset file generic.csv
+	•	1,711 entries of drug information
+	•	22 features
 
 *Model Architecture:*
 
 	Our model is 
+ 	Gradient Boost Regression 
+		calculates the difference between the current prediction and the known correct target value.
+
+  	Sentence Transformer
+		create high-quality embeddings for sentences and text passages. 
 
 
 *Results:*
@@ -68,7 +79,7 @@ Installation
 
  *References:*
 
- 	•	https://www.drugs.com
+ 	•	https://www.kaggle.com/datasets/ahmedshahriarsakib/assorted-medicine-dataset-of-bangladesh?select=generic.csv
  	•	https://colab.research.google.com/
   	•	https://gemini.google.com/
  	
