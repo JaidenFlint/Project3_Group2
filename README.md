@@ -81,7 +81,7 @@ Installation
 
 *Gradio:*
 
-	![gradio_display](Gradio - Drug Interface Project 3.jpg)
+	![Gradio Display](images/Gradio - Drug Interface Project 3.jpg)
  
 *Contributors:*
 
