@@ -59,19 +59,19 @@ Installation
 
 	Initial Regression Metrics:
 
-	Mean Squared Error (MSE): 0.11385 Mean Absolute Error (MAE): 0.16358 R-squared (R²): 0.01664 Interpretation: MSE and MAE are both low, suggesting that 	the model predictions are reasonably close to the actual values. An R-squared value of 0.0164 indicates that the model explains only about 1.64% of 	the variance in the target variable. This suggests a weak model performance, and I may need to explore feature engineering, hyperparameter tuning, or 	using different model architectures to improve my results.
+	Mean Squared Error (MSE): 0.11385 Mean Absolute Error (MAE): 0.16358 R-squared (R²): 0.01664 Interpretation: MSE and MAE are both low, suggesting that the model predictions are reasonably close to the actual values. An R-squared value of 0.0164 indicates that the model explains only about 1.64% of the variance in the target variable. This suggests a weak model performance, and I may need to explore feature engineering, hyperparameter tuning, or using different model architectures to improve my results.
 
 	Hyperparameter Tuning:
 
- 	GridSearchCV: This class performs exhaustive search over specified parameter values for an estimator. The best parameters are determined based on the 	cross-validated performance. Parameter Grid: This grid specifies the values for different hyperparameters that I want to test. Model Training and 	Evaluation: After finding the best parameters, I will train the model again and evaluate its performance.
+ 	Explanation: GridSearchCV: This class performs exhaustive search over specified parameter values for an estimator. The best parameters are determined based on the cross-validated performance. Parameter Grid: This grid specifies the values for different hyperparameters that I want to test. Model Training and Evaluation: After finding the best parameters, I will train the model again and evaluate its performance.
 
-	RandomizedSearchCV: This class performs a random search over parameter values instead of an exhaustive search, which can significantly reduce the 	computation time. n_iter: This parameter specifies the number of different combinations to try. Adjust this number based on time constraints.
+	RandomizedSearchCV: This class performs a random search over parameter values instead of an exhaustive search, which can significantly reduce the computation time. n_iter: This parameter specifies the number of different combinations to try. Adjust this number based on time constraints.
 
 	The output from the RandomizedSearchCV indicates that the hyperparameter tuning was successful. Here’s a summary of the results:
 
-	Best Parameters: n_estimators: 200 min_samples_split: 3 min_samples_leaf: 1 max_depth: 3 learning_rate: 0.01 Model Performance: Best Mean Squared 	Error from CV: 0.14372 Mean Squared Error (Best Model - Random Search): 0.10960 Mean Absolute Error (Best Model - Random Search): 0.14175 R-squared 	(Best Model - Random Search): 0.05335 Interpretation: The Mean Squared Error (MSE) has slightly improved with the best model parameters found through 	random search. The R-squared value is still low (0.05335), indicating that the model explains only about 5.48% of the variance in the target 		variable. This suggests that there is still room for improvement in model performance.
+	Best Parameters: n_estimators: 200 min_samples_split: 3 min_samples_leaf: 1 max_depth: 3 learning_rate: 0.01 Model Performance: Best Mean Squared Error from CV: 0.14372 Mean Squared Error (Best Model - Random Search): 0.10960 Mean Absolute Error (Best Model - Random Search): 0.14175 R-squared (Best Model - Random Search): 0.05335 Interpretation: The Mean Squared Error (MSE) has slightly improved with the best model parameters found through random search. The R-squared value is still low (0.05335), indicating that the model explains only about 5.48% of the variance in the target variable. This suggests that there is still room for improvement in model performance.
 
-	Next Steps that could be utilized, include: Feature Selection and Engineering: Review features and consider adding new features or transforming 	existing ones. Try Different Models: Experiment with different regression algorithms like Random Forest, XGBoost, or even neural networks if 		appropriate. More Data: If possible, consider obtaining more data to train your model, as more data can often lead to better performance. Ensemble 	Techniques: Combine the predictions of several models to improve overall performance.
+	Next Steps that could be utilized, include: Feature Selection and Engineering: Review features and consider adding new features or transforming existing ones. Try Different Models: Experiment with different regression algorithms like Random Forest, XGBoost, or even neural networks if appropriate. More Data: If possible, consider obtaining more data to train your model, as more data can often lead to better performance. Ensemble Techniques: Combine the predictions of several models to improve overall performance.
  
 *Results:*
 
@@ -82,6 +82,7 @@ Installation
 *Gradio:*
 
 	![gradio_display](Gradio - Drug Interface Project 3.jpg)
+ 
 *Contributors:*
 
 	•	Kavita Gopal
