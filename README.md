@@ -79,9 +79,6 @@ Next Steps that could be utilized, include: Feature Selection and Engineering: R
 	•	The model checks for the correct information from the requested drug and summerizes the information.
  	•	The output is shown through the Gradio interface of the drug data including the side-effects.
 
-*Gradio:*
-
-	![Gradio Display](images/Gradio - Drug Interface Project 3.jpg)
  
 *Contributors:*
 
